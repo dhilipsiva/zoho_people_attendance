@@ -2,11 +2,8 @@ import json
 import requests
 import calendar
 from datetime import datetime
-from mycookies import COOKIES, CONREQCSR, ERECNO
+from mycookies import COOKIES, CONREQCSR, ERECNO, YEAR, MONTH, ENDPOINT
 
-
-YEAR = 2024
-MONTH = 5
 
 headers = {
     "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0",
@@ -56,8 +53,8 @@ def main():
             ),
         }
         response = requests.post(
-            "https://people.zoho.in/colligenceresearch/AttendanceAction.zp",
-            cookies=cookies,
+            ENDPOINT,
+            cookies=COOKIES,
             headers=headers,
             data=data,
         )

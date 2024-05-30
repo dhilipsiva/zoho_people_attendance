@@ -1,5 +1,8 @@
+YEAR = 2024
+MONTH = 5
 ERECNO = ""
 CONREQCSR = ""
+ENDPOINT = ""
 COOKIES = {
     "zohocares-_zldp": "",
     "zohocares-_uuid": "",
